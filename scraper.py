@@ -4,8 +4,8 @@ import urllib
 def getit(pagetext):
   soup = BeautifulSoup(pagetext)
   
-  for link in soup.find_all('a'):
-    print(link.get('href'))
+  body_str = soup.body
+  print body_str
   
   
   '''
