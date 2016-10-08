@@ -15,7 +15,7 @@ root = lxml.html.fromstring(html)
 for el in root:
     #print el.tag
     for el2 in el:
-        if el2.tag == "<script type='text/javascript'>":
+        if el2.tag == "script":
             print "TRUE"
         print "--", el2.tag, el2.attrib
     
