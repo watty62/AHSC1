@@ -14,8 +14,8 @@ root = lxml.html.fromstring(html)
 for el in root:           
     print el.tag
     
-# for el in root.cssselect("div.dtree a"):           
-#    print el
+# for el in root.cssselect("div.dtree a"):     
+# print el
 
 # print el.attrib['href']
 
