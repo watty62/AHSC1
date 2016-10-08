@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-This is a template for a Python scraper on morph.io (https://morph.io)
+# This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
 
 import scraperwiki
