@@ -15,6 +15,8 @@ root = lxml.html.fromstring(html)
 for el in root:
     print el.tag
     for el2 in el:
+        if el2.tag == "<script>":
+            print "TRUE"
         print "--", el2.tag, el2.attrib
     
 # # Write out to the sqlite database using scraperwiki library
