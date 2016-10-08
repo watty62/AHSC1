@@ -4,7 +4,7 @@ import urllib
 def getit(pagetext):
   soup = BeautifulSoup(pagetext)
   
-  soup.find_all(attrs={"class": "dtree"})
+  soup.find_all("div", class_="dtree")
   
   
   '''
