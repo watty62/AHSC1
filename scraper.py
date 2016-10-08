@@ -16,10 +16,11 @@ root = lxml.html.fromstring(html)
 for el in root:
     if el.tag =="body":
         for el2 in el:
-            if el2.tag == "script":
-                print "--", el2.tag, el2.attrib
-                myscript = el2.text
-                print myscript
+            print el2.tag, el2.attrib
+            #if el2.tag == "script":
+              #  print "--", el2.tag, el2.attrib
+              # myscript = el2.text
+              # print myscript
 '''
 for el in root:
     print el
