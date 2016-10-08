@@ -4,9 +4,7 @@ import urllib
 def getit(pagetext):
   soup = BeautifulSoup(pagetext)
   
-  for ln in soup:
-    if ln == "<!-- Start of SOBI2 Menu Module -->": 
-        print "true"
+  print soup 
   
   
   '''
