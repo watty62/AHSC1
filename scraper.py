@@ -12,7 +12,7 @@ html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 
-'''
+
 for el in root:
     if el.tag =="body":
         for el2 in el:
@@ -26,7 +26,8 @@ for el in root:
     print "============="
     for el2 in el:
         print "--", el2.tag, el2.attrib
-        
+'''
+
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
