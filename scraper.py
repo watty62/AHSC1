@@ -17,7 +17,7 @@ for el in root:
         for el2 in el:
             if el2.tag == "script":
                 print "--", el2.tag, el2.attrib
-                myscript = el2
+                myscript = el2.text
                 print myscript
     
 # # Write out to the sqlite database using scraperwiki library
