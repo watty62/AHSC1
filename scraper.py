@@ -13,7 +13,9 @@ root = lxml.html.fromstring(html)
 
 for el in root.cssselect("div.dtree a"):           
     print el
-  
+
+print el.attrib['href']
+
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
