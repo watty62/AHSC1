@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup 
+from BeautifulSoup4 import BeautifulSoup 
 import urllib
 
 def getit(pagetext):
