@@ -17,6 +17,8 @@ for el in root:
         for el2 in el:
             if el2.tag == "script":
                 print "--", el2.tag, el2.attrib
+                for el3 in el2:
+                    print el3.tag, el3.attrib
     
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
