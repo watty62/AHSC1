@@ -11,10 +11,12 @@ html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 root = lxml.html.fromstring(html)
 #root.cssselect("div[align='left']")
 
-for el in root.cssselect("div.dtree a"):           
-    print el
+print root
 
-print el.attrib['href']
+# for el in root.cssselect("div.dtree a"):           
+#    print el
+
+# print el.attrib['href']
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
