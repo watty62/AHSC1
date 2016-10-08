@@ -18,7 +18,7 @@ for el in root:
         if el2.tag == "script":
             if el2.attrib == "text/javascript":
                  print "TRUE"
-        print "--", el2.tag, el2.attrib
+            print "--", el2.tag, el2.attrib
     
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
