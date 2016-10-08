@@ -13,11 +13,9 @@ html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 root = lxml.html.fromstring(html)
 
 for el in root:
-    #print el.tag
+    print el.tag
     for el2 in el:
         if el2.tag == "script":
-            if el2.attrib == "{'type': 'text/javascript'}":
-                 print "TRUE"
             print "--", el2.tag, el2.attrib
     
 # # Write out to the sqlite database using scraperwiki library
