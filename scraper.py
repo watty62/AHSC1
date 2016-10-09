@@ -23,7 +23,7 @@ short_html = html [start_index : end_index]
 start_str = "sobi2Cats.icon.nlMinus = 'http://www.grampiancaredata.gov.uk/components/com_sobi2/images/nolines_minus.gif';"
 start_index = short_html.find (start_str) + len(start_str)
 
-end_str = "</script>" 
+end_str = "document.write(sobi2Cats);" 
 end_index = short_html.find (end_str)
 shorter_html = short_html [start_index + 1: end_index]
 
