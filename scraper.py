@@ -16,7 +16,7 @@ html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 start_str = "sobi2Cats.icon.nlMinus = 'http://www.grampiancaredata.gov.uk/components/com_sobi2/images/nolines_minus.gif';"
 start_index = html.find(start_str)
 
-short_html = html [start_index + len( start_str) + 1:]
+short_html = html [start_index :]
 print short_html
 
 # # Write out to the sqlite database using scraperwiki library
