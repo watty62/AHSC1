@@ -31,7 +31,7 @@ shorter_html = short_html [start_index + 1: end_index]
 
 split_lines = shorter_html.splitlines()
 
-print len(split_lines)
+print split_lines [470]
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
