@@ -13,7 +13,7 @@ html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 # root = lxml.html.fromstring(html)
 
 str1 = html 
-str2 = "sobi2Cats.add(408,398,'Care Homes (7)','http://www.grampiancaredata.gov.uk/home?catid=408','','','http://www.grampiancaredata.gov.uk/components/com_sobi2/images/folder.gif' ,'http://www.grampiancaredata.gov.uk/components/com_sobi2/images/folderopen.gif');";
+str2 = "sobi2Cats.add(183,16,'Activities and Social Clubs (94)','http://www.grampiancaredata.gov.uk/home?catid=183','','','http://www.grampiancaredata.gov.uk/components/com_sobi2/images/folder.gif' ,'http://www.grampiancaredata.gov.uk/components/com_sobi2/images/folderopen.gif');"
 
 print str1.find(str2)
 
