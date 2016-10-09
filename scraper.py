@@ -22,7 +22,7 @@ short_html = html [start_index : end_index]
 
 start_str = "sobi2Cats.icon.nlMinus = 'http://www.grampiancaredata.gov.uk/components/com_sobi2/images/nolines_minus.gif';"
 start_index = short_html.find (start_str) + len(start_str)
-shorter_html = short_html [start_index:]
+shorter_html = short_html [start_index + 1:]
 print shorter_html
 
 # # Write out to the sqlite database using scraperwiki library
