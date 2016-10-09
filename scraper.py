@@ -27,8 +27,11 @@ end_str = "document.write(sobi2Cats);"
 end_index = short_html.find (end_str)
 shorter_html = short_html [start_index + 1: end_index]
 
+# print shorter_html
 
-print shorter_html
+split_lines = shorter_html.splitlines()
+
+print split_lines
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
