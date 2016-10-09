@@ -15,7 +15,7 @@ html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 
 start_str = "<!-- Start of SOBI2 Menu Module -->"
 end_str = "<!--End of SOBI2 Menu Module -->"
-start_index = html.find(start_str)
+start_index = html.find(start_str) + len( start_str)
 end_index = html.find (end_str)
 
 short_html = html [start_index : end_index]
