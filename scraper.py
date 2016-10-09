@@ -13,7 +13,7 @@ html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 # root = lxml.html.fromstring(html)
 
 
-start_str = "sobi2Cats.icon.nlMinus = 'http://www.grampiancaredata.gov.uk/components/com_sobi2/images/nolines_minus.gif';"
+start_str = "<!-- Start of SOBI2 Menu Module -->"
 start_index = html.find(start_str)
 
 short_html = html [start_index :]
