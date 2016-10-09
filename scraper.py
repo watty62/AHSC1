@@ -10,10 +10,12 @@ import lxml.html
 html = scraperwiki.scrape("http://www.grampiancaredata.gov.uk/home?catid=2")
 #
 # # Find something on the page using css selectors
-root = lxml.html.fromstring(html)
+# root = lxml.html.fromstring(html)
 
-print root.find_class_name('dtree')
+str1 = html 
+str2 = "sobi2Cats.add(408,398,'Care Homes (7)','http://www.grampiancaredata.gov.uk/home?catid=408','','','http://www.grampiancaredata.gov.uk/components/com_sobi2/images/folder.gif' ,'http://www.grampiancaredata.gov.uk/components/com_sobi2/images/folderopen.gif');";
 
+print str1.find(str2)
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
