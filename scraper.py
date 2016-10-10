@@ -11,8 +11,9 @@ import lxml.html
 def scrape_URL (url_no):
     scrape_add = "http://www.grampiancaredata.gov.uk/home?catid=" & cstr (url_no)
     html = scraperwiki.scrape(scrap_add)
+    return html
 
-for x in range (1, 10):
+for x in range (1, 5):
     print scrape_URL (x) 
     
 
