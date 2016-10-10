@@ -34,7 +34,7 @@ split_lines = shorter_html.splitlines()
 # print split_lines [469]
 
 chopped = [x.strip() for x in split_lines[469].split(',')]
-print chopped 
+print chopped [2], chopped [3]
 
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
