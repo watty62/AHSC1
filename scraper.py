@@ -33,8 +33,7 @@ split_lines = shorter_html.splitlines()
 
 # print split_lines [469]
 
-for y = 0 to len (split_lines) -1 :
-  
+for y in range (len (split_lines)):
     chopped = [x.strip() for x in split_lines[y].split(',')]
     print chopped [2], chopped [3]
 
