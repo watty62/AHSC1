@@ -14,7 +14,7 @@ def scrape_URL (url_no):
     html = scraperwiki.scrape(scrape_add)
     return html
 
-for x in range (1, 5):
+for x in range (10000, 10001):
     print scrape_URL (x) 
     
 
