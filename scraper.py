@@ -9,7 +9,7 @@ import scraperwiki
 # # Read in a page
 
 def scrape_URL (url_no):
-    scrape_add = "http://www.grampiancaredata.gov.uk/home?catid=" & str (url_no)
+    scrape_add = "http://www.grampiancaredata.gov.uk/home?catid=" + str(url_no)
     html = scraperwiki.scrape(scrap_add)
     return html
 
