@@ -7,11 +7,11 @@ import scraperwiki
 # import lxml.html
 #
 # # Read in a page
-scrape_add = ""
+# scrape_add = ""
 
 def scrape_URL (url_no):
     scrape_add = "http://www.grampiancaredata.gov.uk/home?catid=" + str(url_no)
-    html = scraperwiki.scrape(scrap_add)
+    html = scraperwiki.scrape(scrape_add)
     return html
 
 for x in range (1, 5):
