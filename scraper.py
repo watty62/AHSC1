@@ -7,6 +7,7 @@ import scraperwiki
 # import lxml.html
 #
 # # Read in a page
+scrape_add = ""
 
 def scrape_URL (url_no):
     scrape_add = "http://www.grampiancaredata.gov.uk/home?catid=" + str(url_no)
