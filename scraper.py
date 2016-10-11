@@ -10,11 +10,11 @@ import scraperwiki
 # scrape_add = ""
 
 def scrape_URL (url_no):
-    scrape_add = "http://www.grampiancaredata.gov.uk/home?catid=" + str(url_no)
+    scrape_add = "http://www.grampiancaredata.gov.uk/home?sobi2Task=sobi2Details&sobi2Id=" + str(url_no)
     html = scraperwiki.scrape(scrape_add)
     return html
 
-for x in range (10000, 10001):
+for x in range (103, 104):
     print scrape_URL (x) 
     
 
