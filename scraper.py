@@ -25,7 +25,7 @@ def scrape_URL (url_no):
     
     # get services
     for x in range [1:5]:
-        if len( root.cssselect ("div#FirstTab p")[x] > 0:
+        if len( root.cssselect ("div#FirstTab p")[x]) > 0:
                services [x] = root.cssselect ("div#FirstTab p")[x].text
     
     print services [0:]
