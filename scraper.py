@@ -24,11 +24,10 @@ def scrape_URL (url_no):
     print rec_no
     
     # get services
-    for x in range (1,3):
-        if len( root.cssselect ("div#FirstTab p")[x]) > 0:
-               services [x] = root.cssselect ("div#FirstTab p")[x].text
+    el = root.cssselect ("div#FirstTab p")[1]
+    services [0] = el.text 
     
-    print services [0:]
+    print services [0]
     
     return "true"
 
