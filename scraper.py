@@ -24,8 +24,8 @@ def scrape_URL (url_no):
     print rec_no
     
     ########################################
-    for el in root.cssselect("div.featured a"):           
-    print el
+    # for el in root.cssselect("div.featured a"):           
+    # print el
     ########################################
     
     # get services
