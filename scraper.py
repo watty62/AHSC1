@@ -22,12 +22,7 @@ def scrape_URL (url_no):
     el = root.cssselect("div#sobi2outer p")[0]  
     rec_no = str( el.text [14:].strip())
     print rec_no
-    
-    ########################################
-    # for el in root.cssselect("div.featured a"):           
-    # print el
-    ########################################
-    
+  
     # get services
     for el2 in root.cssselect ("div#FirstTab p"):
     # el2 = root.cssselect ("div#FirstTab p")[2]
