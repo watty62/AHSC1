@@ -26,7 +26,8 @@ def scrape_URL (url_no):
     # get services
     el = root.cssselect ("div#FirstTab p")[1]
     el2 = root.cssselect ("div#FirstTab p")[2]
-    services = el.text + el2.text
+    el3 = root.cssselect ("div#FirstTab p")[3]
+    services = el.text + "\n" & el2.text + "\n" + el3.text
     
     print services
     
