@@ -15,10 +15,8 @@ def scrape_URL (url_no):
     root = lxml.html.fromstring(html)
 
     # for el in root:
-    for el in root.cssselect("div.tab-page a"):           
-         # print lxml.html.tostring(el)
-        print el.attrib['href']
-        
+    el = root.cssselect("div#sobi2outer p")[0]  
+    print el
     return "true"
 
 # lower_rec = 16
