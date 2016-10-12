@@ -14,7 +14,7 @@ def scrape_URL (url_no):
     html = scraperwiki.scrape(scrape_add)
     root = lxml.html.fromstring(html)
     # for el in root:
-    for el2 in el[1]
+    for el2 in root[1]
         print el2
     
     return "true"
