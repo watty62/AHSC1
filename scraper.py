@@ -24,9 +24,9 @@ def scrape_URL (url_no):
     print rec_no
     
     # get services
-    for p in root.cssselect ("div#FirstTab p"):
-        services [p] = root.cssselect ("div#FirstTab p")[p]
-    services = el.text
+    for x in root.cssselect ("div#FirstTab p"):
+        services [x] = root.cssselect ("div#FirstTab p")[x].text
+    
     print services
     
     return "true"
