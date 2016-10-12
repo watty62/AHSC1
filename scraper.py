@@ -15,7 +15,7 @@ def scrape_URL (url_no):
     root = lxml.html.fromstring(html)
 
     # for el in root:
-    for el in root.cssselect("div.featured a"):           
+    for el in root.cssselect("div.tab-page a"):           
         print el
     
     return "true"
