@@ -16,7 +16,7 @@ def scrape_URL (url_no):
 
     # for el in root:
     el = root.cssselect("div#sobi2outer p")[0]  
-    print el
+    print el.text
     return "true"
 
 # lower_rec = 16
