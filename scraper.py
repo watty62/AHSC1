@@ -4,7 +4,7 @@
 # including some code snippets below that you should find helpful
 
 import scraperwiki
-# import lxml.html
+import lxml.html
 #
 # # Read in a page
 # scrape_add = ""
@@ -12,10 +12,15 @@ import scraperwiki
 def scrape_URL (url_no):
     scrape_add = "http://www.grampiancaredata.gov.uk/home?sobi2Task=sobi2Details&sobi2Id=" + str(url_no)
     html = scraperwiki.scrape(scrape_add)
-    return html
-
-for x in range (103, 104):
-    print scrape_URL (x) 
+    root = lxml.html.fromstring(html)
+    print root
     
+    return "true"
 
-    
+# lower_rec = 16
+# upper_rec = 2402
+
+# for x in range (lower_rec, upper_rec):
+#    print scrape_URL (x)  
+
+scrape_URL(103)
