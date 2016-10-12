@@ -13,8 +13,9 @@ def scrape_URL (url_no):
     scrape_add = "http://www.grampiancaredata.gov.uk/home?sobi2Task=sobi2Details&sobi2Id=" + str(url_no)
     html = scraperwiki.scrape(scrape_add)
     root = lxml.html.fromstring(html)
-    for el in root:
-        print el
+    # for el in root:
+    for el2 in el[1]
+        print el2
     
     return "true"
 
