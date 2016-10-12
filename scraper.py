@@ -9,10 +9,6 @@ import lxml.html
 # # Read in a page
 # scrape_add = ""
 
-def extract_ints (s):
-    ret_int = [int(s) for s in str.split() if s.isdigit()]
-    return ret_int[1]
-
 def scrape_URL (url_no):
     scrape_add = "http://www.grampiancaredata.gov.uk/home?sobi2Task=sobi2Details&sobi2Id=" + str(url_no)
     html = scraperwiki.scrape(scrape_add)
@@ -20,11 +16,17 @@ def scrape_URL (url_no):
     
     #set up variables
     rec_no = 0
+    services = ""
     
     # get the rec_no
     el = root.cssselect("div#sobi2outer p")[0]  
     rec_no = str( el.text [14:].strip())
     print rec_no
+    
+    # get services
+    el = root.cssselect ("div#FirstTab p") [0]
+    services = el.text
+    print services
     
     return "true"
 
