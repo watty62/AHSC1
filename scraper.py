@@ -16,7 +16,7 @@ def scrape_URL (url_no):
 
     # for el in root:
     for el in root.cssselect("div.featured a"):           
-    print el
+        print el
     
     return "true"
 
